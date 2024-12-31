@@ -14,6 +14,12 @@ importers:
       bits-ui:
         specifier: ^0.22.0
         version: 0.22.0(svelte@5.15.0)
+      lucide-svelte:
+        specifier: ^0.469.0
+        version: 0.469.0(svelte@5.15.0)
+      svelte-qrcode:
+        specifier: ^1.0.1
+        version: 1.0.1
     devDependencies:
       '@eslint/compat':
         specifier: ^1.2.4
@@ -1013,6 +1019,11 @@ packages:
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
+  lucide-svelte@0.469.0:
+    resolution: {integrity: sha512-PMIJ8jrFqVUsXJz4d1yfAQplaGhNOahwwkzbunha8DhpiD73xqX24n8dE1dPpUk3vcrdWVsHc1y/liHHotOnGQ==}
+    peerDependencies:
+      svelte: ^3 || ^4 || ^5.0.0-next.42
+
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
 
@@ -1269,6 +1280,9 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
+  qrious@4.0.2:
+    resolution: {integrity: sha512-xWPJIrK1zu5Ypn898fBp8RHkT/9ibquV2Kv24S/JY9VYEhMBMKur1gHVsOiNUh7PHP9uCgejjpZUHUIXXKoU/g==}
+
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
@@ -1385,6 +1399,9 @@ packages:
     peerDependenciesMeta:
       svelte:
         optional: true
+
+  svelte-qrcode@1.0.1:
+    resolution: {integrity: sha512-l1RcxDWkQqtBWUkolYee/IHGVKSgm1I2PdF8yVoIRqzKCc3kXpCXSVsMfrMSavWW2/BXvKu5Orv+JGbrO5onsw==}
 
   svelte@5.15.0:
     resolution: {integrity: sha512-YWl8rAd4hSjERLtLvP6h2pflGtmrJwv+L12BgrOtHYJCpvLS9WKp/YNAdyolw3FymXtcYZqhSWvWlu5O1X7tgQ==}
@@ -2413,6 +2430,10 @@ snapshots:
 
   lru-cache@10.4.3: {}
 
+  lucide-svelte@0.469.0(svelte@5.15.0):
+    dependencies:
+      svelte: 5.15.0
+
   magic-string@0.30.17:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
@@ -2573,6 +2594,8 @@ snapshots:
 
   punycode@2.3.1: {}
 
+  qrious@4.0.2: {}
+
   queue-microtask@1.2.3: {}
 
   read-cache@1.0.0:
@@ -2707,6 +2730,10 @@ snapshots:
       postcss-scss: 4.0.9(postcss@8.4.49)
     optionalDependencies:
       svelte: 5.15.0
+
+  svelte-qrcode@1.0.1:
+    dependencies:
+      qrious: 4.0.2
 
   svelte@5.15.0:
     dependencies:
