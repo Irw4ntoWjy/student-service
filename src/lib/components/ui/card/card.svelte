@@ -2,14 +2,19 @@
 	import { cn } from '$lib/utils';
 	import { ChevronRight } from 'lucide-svelte';
 
-	let { title, description, src }: { title: string; description: string; src: string } = $props();
+	let {
+		title,
+		description,
+		src,
+		onClick
+	}: { title: string; description: string; src: string; onClick: () => void } = $props();
 </script>
 
 <div
 	class={cn(
 		'group max-w-md rounded-2xl border border-neutral-500/10 dark:border-white/10',
 		'dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]',
-		'group transform-gpu transition-transform hover:scale-[1.01]',
+		'transform-gpu transition-transform hover:scale-[1.01]',
 		'relative bg-gray-50 dark:bg-neutral-800/80'
 	)}
 >
@@ -25,24 +30,26 @@
 		>
 			{title}
 		</h6>
-		<div class="flex items-center">
-			<p class="text-left text-sm tracking-tight dark:text-gray-400">
+		<div class="flex items-center justify-between transition-all">
+			<p
+				class={cn(
+					'text-left text-sm tracking-tight dark:text-gray-400',
+					'flex-1 transition-all duration-300',
+					'group-hover:mr-2'
+				)}
+			>
 				{description}
 			</p>
 			<button
-				class="group flex transform-gpu items-center gap-1 rounded-md px-2 py-1 transition-colors hover:bg-neutral-400/15 active:bg-neutral-400/25"
+				class={cn(
+					'size-8 rounded-full bg-primary text-sm font-semibold text-white',
+					'flex items-center justify-center opacity-0 transition-opacity duration-300',
+					'group-hover:opacity-100'
+				)}
 				type="button"
+				onclick={onClick}
 			>
-				<span
-					class="w-fit max-w-0 transform-gpu overflow-hidden transition-all duration-500 group-hover:max-w-20"
-				>
-					<span
-						class=" transform-gpu whitespace-nowrap text-sm text-neutral-400 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-					>
-						View More
-					</span>
-				</span>
-				<ChevronRight aria-hidden="true" class="size-4 text-neutral-400" />
+				<ChevronRight class="h-4 w-4" />
 			</button>
 		</div>
 	</div>

@@ -1,7 +1,8 @@
 <script lang="ts">
-	import QrCode from 'svelte-qrcode';
+	import Qrcode from 'svelte-qrcode';
 </script>
 
-<div class="container">
-	<QrCode value="https://github.com/" />
+<div class="flex h-full w-full flex-col items-center justify-center">
+	<Qrcode value="https://github.com/" />
+	<div>Scan QR Code diatas ini untuk mengambil nomor antrian</div>
 </div>

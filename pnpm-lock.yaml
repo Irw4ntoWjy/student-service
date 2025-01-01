@@ -11,9 +11,6 @@ importers:
       '@internationalized/date':
         specifier: ^3.6.0
         version: 3.6.0
-      bits-ui:
-        specifier: ^0.22.0
-        version: 0.22.0(svelte@5.15.0)
       lucide-svelte:
         specifier: ^0.469.0
         version: 0.469.0(svelte@5.15.0)
@@ -36,6 +33,9 @@ importers:
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.49)
+      bits-ui:
+        specifier: ^0.22.0
+        version: 0.22.0(svelte@5.15.0)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
