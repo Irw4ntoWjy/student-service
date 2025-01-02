@@ -14,12 +14,11 @@
 		});
 		const result = await response.json();
 		if (response.ok) {
-			data = `${page.url.pathname}/${JSON.parse(result.data)[0]}`;
+			data = `${page.url}/${JSON.parse(result.data)[0]}`;
 		}
 	};
 
 	let data: string | undefined = $state(undefined);
-	$inspect(data);
 </script>
 
 {#if data}
