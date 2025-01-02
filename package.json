@@ -39,6 +39,8 @@
 	},
 	"dependencies": {
 		"@internationalized/date": "^3.6.0",
+		"@vercel/postgres": "^0.10.0",
+		"dotenv": "^16.4.7",
 		"lucide-svelte": "^0.469.0",
 		"pg": "^8.13.1"
 	}

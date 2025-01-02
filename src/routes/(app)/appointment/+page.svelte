@@ -19,6 +19,7 @@
 	};
 
 	let data: string | undefined = $state(undefined);
+	$inspect(data);
 </script>
 
 {#if data}
