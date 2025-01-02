@@ -39,6 +39,7 @@
 	"dependencies": {
 		"@internationalized/date": "^3.6.0",
 		"lucide-svelte": "^0.469.0",
+		"pg": "^8.13.1",
 		"svelte-qrcode": "^1.0.1"
 	}
 }
