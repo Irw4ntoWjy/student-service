@@ -13,6 +13,7 @@
 		"lint": "prettier --check . && eslint ."
 	},
 	"devDependencies": {
+		"@castlenine/svelte-qrcode": "^2.3.0",
 		"@eslint/compat": "^1.2.4",
 		"@sveltejs/adapter-auto": "^3.3.1",
 		"@sveltejs/kit": "^2.15.0",
@@ -39,7 +40,6 @@
 	"dependencies": {
 		"@internationalized/date": "^3.6.0",
 		"lucide-svelte": "^0.469.0",
-		"pg": "^8.13.1",
-		"svelte-qrcode": "^1.0.1"
+		"pg": "^8.13.1"
 	}
 }

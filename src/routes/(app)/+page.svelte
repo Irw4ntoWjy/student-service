@@ -8,13 +8,13 @@
 		title="Student Finance"
 		description="Melayani permasalahan-permasalahan dalam administrasi keuangan mahasiswa/i universitas"
 		src=""
-		onClick={() => goto('/student-finance')}
+		onClick={() => goto('/appointment')}
 	/>
 	<Card
 		title="General Affairs"
 		description="Melayani permasalahan-permasalahan peminjaman ruangan serta properti universitas"
 		src=""
-		onClick={() => console.log('clicked')}
+		onClick={() => goto('/appointment')}
 	/>
 </div>
 

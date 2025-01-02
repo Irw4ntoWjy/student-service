@@ -5,10 +5,11 @@ const pool = new Pool({
 	host: 'localhost',
 	port: 5500,
 	user: 'postgres',
-	password: 'postgres',
+	password: 'mysecretpassword',
 	database: 'postgres'
 });
 
+// TODO where to trigger createTable
 export const createTable = async () => {
 	const query = `
         CREATE TABLE IF NOT EXISTS appointment (
@@ -24,6 +25,8 @@ export const createTable = async () => {
 		client.release();
 	}
 };
+
+createTable()	
 
 export const insertRow = async (param: string, value: string) => {
 	const query = `INSERT INTO appointment(${param}) VALUES ($1) RETURNING CURRENT_NUMBER`;

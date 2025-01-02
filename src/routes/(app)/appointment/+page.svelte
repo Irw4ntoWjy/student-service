@@ -1,7 +1,10 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
+	import { page } from '$app/state';
 	import Button from '$lib/components/ui/button/button.svelte';
+	import QRCode from '@castlenine/svelte-qrcode';
 
-	const handleSubmit = async (event: Event) => {
+	const onsubmit = async (event: Event) => {
 		event.preventDefault();
 		const response = await fetch('?/createAppointment', {
 			method: 'POST',
@@ -10,16 +13,18 @@
 			}
 		});
 		const result = await response.json();
-		console.log(result);
-		console.log(JSON.parse(result.data)[0]);
+		if (response.ok) {
+			data = `${page.url.pathname}/${JSON.parse(result.data)[0]}`;
+		}
 	};
+
+	let data: string | undefined = $state(undefined);
 </script>
 
-<form
-	action="?/createAppointment"
-	method="post"
-	onsubmit={handleSubmit}
-	enctype="application/x-www-form-urlencoded"
->
-	<Button type="submit">Appointment</Button>
-</form>
+{#if data}
+	<QRCode {data} />
+{:else}
+	<form action="?/createAppointment" method="post" {onsubmit}>
+		<Button type="submit">Appointment</Button>
+	</form>
+{/if}
