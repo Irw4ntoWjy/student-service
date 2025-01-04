@@ -18,14 +18,64 @@
 	<span class="font-bold">
 		Ada beberapa kondisi administrasi yang dapat dihadapi oleh mahasiswa sebagai berikut:
 	</span>
+	<span class="font-bold"> 1. Kelebihan Pembayaran </span>
+	<span class="text-sm">
+		Jika ada satu atau lain hal mahasiswa memiliki kelebihan pembayaran maka akan menjadi deposit
+		yang dapat dibawa ke semester selanjutnya. Refund atas deposit hanya dapat dilakukan sesudah
+		mahasiswa wisuda.
+	</span>
+	<span class="font-bold"> 2. Belum Melakukan Pembayaran Seluruhnya</span>
+	<span class="text-sm">
+		Jika ada satu atau lain hal mahasiswa memiliki tagihan saat semester baru dimulai maka mahasiwa
+		yang bersangkutan tidak diijinkan untuk mengikuti perkuliahan pada semester baru.
+	</span>
+	<span class="font-bold"> 3. Keterlambatan Pembayaran Biaya Pendidikan</span>
+	<span class="text-sm">
+		Mahasiswa akan dikenakan cuti akademik dan wajib memenuhi kewajiban untuk melunasi biaya
+		administrasi cuti akademik.
+	</span>
+	<span class="font-bold"> 3. Keterlambatan Pembayaran Biaya Pendidikan</span>
+	<span class="text-sm">
+		Mahasiswa akan dikenakan cuti akademik dan wajib memenuhi kewajiban untuk melunasi biaya
+		administrasi cuti akademik.
+	</span>
+	<span class="font-bold">
+		4. Biaya Studi yang melewati 8 (delapan) Semester untuk Program Sarjana</span
+	>
+	<span class="text-sm">
+		Apablia Mahasiswa belum menyelesaikan studi sampai dengan 8 (delapan) semester kuliah, tidak
+		termasauk cuti akademik yang secara resmi diajukan dan disetujui serta yang diperbolehkan selama
+		4 (empat) semester sesuai dengan yang diatur dalam SK Senat UPH Nomor 001/SK-Senat/UPH/III/2006,
+		maka biaya pendidikan setelah 8 (delapan) semester kuliah ditambah jumlah semester cuti yang
+		diambil, adalah mengikuti ketentuan biaya pendidikan yang baru (mengikuti harga baru yang sedang
+		berlaku meliputi BPP, Herm biaya sidang, biaya wisuda). Biaya studi ini berlaku mulai intake
+		ganjil 2020/2021.
+	</span>
 </div>
-<Button.Root
-	class="shadow-mini hover:bg-dark/95 active:scale-98 inline-flex h-10
-w-auto items-center justify-center rounded-md bg-primary
-px-[21px] text-sm font-semibold text-background active:transition-all"
-	onclick={() => {
-		goto('/appointment');
-	}}
->
-	Buat Appointment
-</Button.Root>
+
+<div class="mt-32 flex flex-col justify-end gap-4">
+	<span>Jika permasalahan anda termaksud pada poin diatas silahkan tekan tombol dibawah ini </span>
+	<Button.Root
+		class="shadow-mini hover:bg-dark/95 active:scale-98 inline-flex
+			h-10 w-auto items-center justify-center self-start
+			rounded-md bg-primary px-[21px] text-sm font-semibold text-background active:transition-all"
+		onclick={() => {
+			window.location.href =
+				'https://drive.google.com/drive/folders/1nqXkcm7Jis4KZBSITfS1WwhK9M7iSsoh';
+		}}
+	>
+		Link
+	</Button.Root>
+
+	<span>Ingin bantuan lebih lanjut ? </span>
+	<Button.Root
+		class="shadow-mini hover:bg-dark/95 active:scale-98  inline-flex
+			h-10 w-auto items-center justify-center self-start
+			rounded-md bg-primary px-[21px] text-sm font-semibold text-background active:transition-all"
+		onclick={() => {
+			goto('/appointment');
+		}}
+	>
+		Buat Appointment
+	</Button.Root>
+</div>

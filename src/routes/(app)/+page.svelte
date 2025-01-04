@@ -10,6 +10,54 @@
 		src=""
 		onClick={() => goto('/student-finance')}
 	/>
+	<Card
+		title="Student Finance"
+		description="Melayani permasalahan-permasalahan dalam administrasi keuangan mahasiswa/i universitas"
+		src=""
+		onClick={() => goto('/student-finance')}
+	/>
+	<Card
+		title="Student Finance"
+		description="Melayani permasalahan-permasalahan dalam administrasi keuangan mahasiswa/i universitas"
+		src=""
+		onClick={() => goto('/student-finance')}
+	/>
+	<Card
+		title="Student Finance"
+		description="Melayani permasalahan-permasalahan dalam administrasi keuangan mahasiswa/i universitas"
+		src=""
+		onClick={() => goto('/student-finance')}
+	/>
+	<Card
+		title="Student Finance"
+		description="Melayani permasalahan-permasalahan dalam administrasi keuangan mahasiswa/i universitas"
+		src=""
+		onClick={() => goto('/student-finance')}
+	/>
+	<Card
+		title="Student Finance"
+		description="Melayani permasalahan-permasalahan dalam administrasi keuangan mahasiswa/i universitas"
+		src=""
+		onClick={() => goto('/student-finance')}
+	/>
+	<Card
+		title="Student Finance"
+		description="Melayani permasalahan-permasalahan dalam administrasi keuangan mahasiswa/i universitas"
+		src=""
+		onClick={() => goto('/student-finance')}
+	/>
+	<Card
+		title="Student Finance"
+		description="Melayani permasalahan-permasalahan dalam administrasi keuangan mahasiswa/i universitas"
+		src=""
+		onClick={() => goto('/student-finance')}
+	/>
+	<Card
+		title="Student Finance"
+		description="Melayani permasalahan-permasalahan dalam administrasi keuangan mahasiswa/i universitas"
+		src=""
+		onClick={() => goto('/student-finance')}
+	/>
 </div>
 
 <!-- <Card
